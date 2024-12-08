@@ -1,0 +1,104 @@
+body {
+    font-family: "Times New Roman", serif;
+    background-color: linen;
+    color: sienna;
+    margin: 0 auto;
+}
+
+.header {
+    font-family: "21st Century", fantasy;
+    height: 23vw;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/static/images/image_home.jpeg");
+    background-size: cover;
+    background-position: center;
+    display: relative;
+    justify-content: center;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 6vw;
+    color: goldenrod;
+    margin: 0px;
+    justify-content: center;
+    text-align: center;
+}
+
+.container {
+    padding: 10px;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.container p{
+    font-size: 2vw;
+    font-style: italic;
+    text-align: center;
+}
+
+.catalog {
+    grid-column: 1/3
+}
+
+.clothes_list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 50px;
+    gap: 20px;
+}
+
+.clothes_item {
+    background-color: linen;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid sienna;
+}
+
+.clothes_item h3 {
+    text-align: center;
+    font-size: 3vw;
+}
+
+.clothes_item p {
+    font-size: 2vw;
+}
+
+.image_detail {
+    flex: 0 0 auto;
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+    margin: 5% auto;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+.pagination li {
+    margin: 0 5px;
+}
+.pagination a {
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: sienna;
+}
+.pagination .current {
+    color: maroon;
+}
+.pagination .disabled {
+    color: linen;
+    pointer-events: none;
+}
+.pagination select {
+    padding: 5px;
+    border-radius: 5px;
+}
